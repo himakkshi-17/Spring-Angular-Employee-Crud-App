@@ -1,0 +1,21 @@
+<!-- <h2>Employee List</h2> -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- this employees will be an array and it will be defined in the .ts file -->
+        <tr *ngFor = "let employee of employees" >
+            <!-- employee is a particular index of Employess array and each emplyee will be having 4 feilds i.e. firstName LastName email and id -->
+            <td>{{employee.id}}</td>
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.emailId}}</td>
+        </tr>
+    </tbody>
+</table>
